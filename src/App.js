@@ -1,18 +1,20 @@
 import './App.css';
 import React from "react";
-import Banner from "./components/Banner";
-import Exhibit from "./components/Exhibit";
+import Banner from "./components/banner";
+import Exhibit from "./components/exhibit";
 
 function App() {
   return (
-    <div className="App">
+    <div className="App" style={{ fontFamily: 'sans-serif', backgroundColor: '#F8FAFC', minHeight: '100vh' }}>
       <Banner title="Welcome to Sextant!" />
-      <Exhibit heading="Tic-Tac-Toe Game">
-        <p>This is where the Tic-Tac-Toe game will go.</p>
-      </Exhibit>
-      <Exhibit heading="About">
-        <p>This site demonstrates component composition using React.</p>
-      </Exhibit>
+      <main>
+        <Exhibit heading="Tic-Tac-Toe Game">
+          <p>Tic-tac-toe</p>
+        </Exhibit>
+        <Exhibit heading="About">
+          <p>This site demonstrates component composition using React.</p>
+        </Exhibit>
+      </main>
     </div>
   );
 }
