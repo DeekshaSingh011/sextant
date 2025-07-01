@@ -2,6 +2,7 @@ import './App.css';
 import React from "react";
 import Banner from "./components/banner";
 import Exhibit from "./components/exhibit";
+import IPAddress from "./components/IPAddress";
 
 function App() {
   return (
@@ -11,6 +12,15 @@ function App() {
         <Exhibit heading="Tic-Tac-Toe Game">
           <p>Tic-tac-toe</p>
         </Exhibit>
+
+        <Exhibit heading="Public IPv4 Address">
+          <IPAddress version="v4" />
+        </Exhibit>
+
+        <Exhibit heading="Public IPv6 Address">
+          <IPAddress version="v6" />
+        </Exhibit>
+
         <Exhibit heading="About">
           <p>This site demonstrates component composition using React.</p>
         </Exhibit>
