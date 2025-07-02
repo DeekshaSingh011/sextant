@@ -3,6 +3,7 @@ import React from "react";
 import Banner from "./components/banner";
 import Exhibit from "./components/exhibit";
 import IPAddress from "./components/IPAddress";
+import Latency from "./components/Latency"; // <-- added
 
 function App() {
   return (
@@ -19,6 +20,10 @@ function App() {
 
         <Exhibit heading="Public IPv6 Address">
           <IPAddress version="v6" />
+        </Exhibit>
+
+        <Exhibit heading="Packet Latency">
+          <Latency /> {/* <-- added */}
         </Exhibit>
 
         <Exhibit heading="About">
